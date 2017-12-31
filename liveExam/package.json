@@ -1,0 +1,23 @@
+{
+  "name": "liveExam",
+  "version": "0.0.1",
+  "private": false,
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "latest",
+    "connect-ensure-login": "latest",
+    "cookie-parser": "latest",
+    "express": "latest",
+    "express-jwt": "latest",
+    "express-session": "latest",
+    "jsonwebtoken": "latest",
+    "mongoose": "latest",
+    "morgan": "latest",
+    "nodemailer": "latest",
+    "passport": "latest",
+    "passport-facebook": "latest",
+    "passport-google-oauth2": "latest",
+    "shortid": "latest",
+    "socket.io": "latest"
+  }
+}

@@ -1,0 +1,1 @@
+exports.secret = 'this is a secret key';
