@@ -171,7 +171,7 @@ Installing and pulling files
 ```
 1) Create new directory by : mkdir dirname
 2) cd into that folder
-3) Add git origin by : git remote add origin https://github.com/codemachin/TheInvigilator.git
+3) Add git origin by : git remote add origin https://github.com/abhi16694/project.1.git
 4) Initialise git to that directory : git init
 5) Pull files: git pull origin master  
 6) Run : npm install, to install all dependencies
