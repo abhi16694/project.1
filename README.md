@@ -4,11 +4,11 @@ Robust MEAN live test taking system
 
 ## Domain pointed to cloud server using route 53
 
-[liveExam.ga](http://liveexam.ga "live test taking system")
+[liveexam.ga](http://liveexam.ga "live test taking system")
 
 ## AWS public ip
 
-[52.1.107.157](http://52.1.107.157 "live test taking system")
+[](http:// "live test taking system")
 
 ## Assumption
 
@@ -22,7 +22,9 @@ Robust MEAN live test taking system
 
 ## Project Description
 ```
-A live test taking system that allows an organisation to conduct a test in MCQ pattern. The project keeps a track of the time live and prevents any kind of tampering. Various charts and analytics are shown once the user finishes the test.
+A live test taking system that allows an organisation to conduct a test in MCQ pattern.
+The project keeps a track of the time live and prevents any kind of tampering.
+Various charts and analytics are shown once the user finishes the test.
 ```
 
 ## Features
