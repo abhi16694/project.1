@@ -1,6 +1,6 @@
 # Live Exam App, is a live test taking system
 
-Robust MEAN live test taking system
+Robust live test taking system
 
 ## Domain pointed to cloud server using route 53
 
@@ -86,10 +86,6 @@ Various charts and analytics are shown once the user finishes the test.
 	6) Socket event stops the test if client timer fails or paused or is hacked.
 	7) Secured with JWT. Default JWT expiry time is set to 30 minutes.
 	8) Pure stateless REST apis.	
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
@@ -187,7 +183,7 @@ Nginx configuration for proxy pass to port 80 and allowing web sockets.
 	server {
 
 	    listen 80;
-	    server_name liveExam.ga;
+	    server_name liveexam.ga;
 
 	    location / {
 
