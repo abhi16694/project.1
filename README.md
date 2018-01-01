@@ -1,24 +1,14 @@
 # Live Exam App, is a live test taking system
 
-Robust live test taking system
+## AWS public DNS
 
-## Domain pointed to cloud server using route 53
-
-[liveexam.ga](http://liveexam.ga "live test taking system")
-
-## AWS public ip
-
-[](http:// "live test taking system")
-
-## Assumption
-
-* Please signup with email as '**admin@admin.com**' to be the admin of this system.
-* All users having email as '**admin@admin.com**' will be the admin of this application.
-* Treated the Admin as a user of the system. Din't created special backend for admin.
+[ec2-34-236-152-65.compute-1.amazonaws.com](http://ec2-34-236-152-65.compute-1.amazonaws.com "Live Exam App")
 
 ## Please note
 
-* All callback urls for social logins and email reset url links are with respect to liveExam.ga
+* All callback urls for social logins and email reset url links are with respect to AWS public DNS.
+* For signup as admin email- '**admin@admin.com**' password- '**123456789**'.
+* Din't created any special backend for admin.
 
 ## Project Description
 ```
@@ -96,30 +86,31 @@ Various charts and analytics are shown once the user finishes the test.
 
 ### Installing
 
-Environment : Windows and Linux
+Environment : Windows and Ubuntu
 
 Setting Prerequisites
 
 ```
-1) Start mongodb by running mongod
-2) Check node is above version 6.0. Check by typing node -v in terminal
+1) Mongodb for Database handling, so install it and start with the file mongod.
+2) Install and check node is above version 6.0. Check by typing node -v in terminal.
+3) In Ubuntu to upgrade your nodejs write command [curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -] and after    that write [sudo apt-get install nodejs].
 ```
 
 Setting up the local server
 
 ```
-1) Unzip the file
-2) Open terminal and change its location the where you unzipped the file
-3) Run command npm install
-4) After all dependencies are installed. Run command : node app.js, in your terminal
-5) let the server start
+1) Unzip the file.
+2) Open terminal and change its location the where you unzipped the file.
+3) Run command npm install.
+4) Start mongodb server if not done till now.
+5) After all dependencies are installed. Run command : node app.js, in your terminal.
 ```
 
 Getting started
 
 ```
-1) Visit http://localhost:3000 on your browser
-2) Select signup to create a new account
+1) Visit http://localhost:3000 on your browser.
+2) Select signup to create a new account.
 3) Organise a quality test for the students to judge their skills with the vast array of analytics.
 ```
 
@@ -153,7 +144,7 @@ Admin facing :
 
 
 
-## Deployment on linux server
+## Deployment on Ubuntu server
 
 Prerequisites
 
@@ -168,12 +159,14 @@ Installing and pulling files
 
 ```
 1) Create new directory by : mkdir dirname
-2) cd into that folder
-3) Add git origin by : git remote add origin https://github.com/abhi16694/project.1.git
-4) Initialise git to that directory : git init
-5) Pull files: git pull origin master  
-6) Run : npm install, to install all dependencies
-7) Run : node app.js, to start the server
+2) cd into that folder.
+3) Add git origin by : git remote add origin [https://github.com/abhi16694/project.1.git].
+4) Initialise git to that directory : git init.
+5) Pull files: git pull origin master.  
+6) Run : npm install, to install all dependencies.
+7) Run : node app.js, to start the server.
+8) For making your project run forever: [sudo npm install forever -g].
+9) And start your app write command: [forever start app.js].
 ```
 
 Nginx configuration for proxy pass to port 80 and allowing web sockets.
@@ -183,7 +176,6 @@ Nginx configuration for proxy pass to port 80 and allowing web sockets.
 	server {
 
 	    listen 80;
-	    server_name liveexam.ga;
 
 	    location / {
 
