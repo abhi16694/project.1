@@ -22,8 +22,8 @@ Various charts and analytics are shown once the user finishes the test.
 	1) Single page application
 	2) Login(encrypted)
 	3) Signup(encrypted)
-	4) Facebook and google login using passport js.
-	5) Facebook and google signup using passport js.
+	4) Facebook login functionality can be checked locally only as domain name not given but google login is in hosted 	      version also, both by using passport js.
+	5) Facebook signup functionality can be checked locally only as domain name not given but google signupis in hosted 	       version also, both by using passport js.
 	6) Forgot password functionality to resetting password.
 	7) User testing management panel - User facing 
 		~ Once the user logs into the system, he can see a dashboard containing the statistics of all tests he has 
