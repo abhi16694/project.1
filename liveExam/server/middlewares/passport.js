@@ -14,6 +14,7 @@ exports.passportMiddleware = function(passport,app) {
     passport.use(new GoogleStrategy({
         clientID:     GOOGLE_CLIENT_ID,
         clientSecret: GOOGLE_CLIENT_SECRET,
+        callbackURL: "http://liveexam.tk/auth/google/callback",
         callbackURL: "http://localhost:3000/auth/google/callback",
         passReqToCallback   : true
       },
@@ -26,6 +27,10 @@ exports.passportMiddleware = function(passport,app) {
     // setting up client id and client secret
 
     passport.use(new Strategy({
+        clientID: '401873783605095',
+        clientSecret: '93f8cef4c3bc1ac06fbeddf6568d4e38',
+        callbackURL: 'http://liveexam.tk/login/facebook/return',
+        /////////////////////////////////////// Localhost ////////////////////////////////////////
         clientID: '1977813652507076',
         clientSecret: '9c7b9d98afe44e136845ab6f4460ec39',
         callbackURL: 'http://localhost:3000/login/facebook/return',
