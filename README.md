@@ -1,12 +1,16 @@
 # Live Exam App, is a live test taking system
 
+## Domain pointed to cloud server using route 53
+
+[www.liveexam.tk](http://www.liveexam.tk "live test taking system")
+
 ## AWS public DNS
 
-[ec2-34-236-152-65.compute-1.amazonaws.com](http://ec2-34-236-152-65.compute-1.amazonaws.com "Live Exam App")
+[ec2-34-201-219-61.compute-1.amazonaws.com](http://ec2-34-201-219-61.compute-1.amazonaws.com "Live Exam App")
 
 ## Please note
 
-* All callback urls for social logins and email reset url links are with respect to AWS public DNS.
+* All callback urls for social logins and email reset url links are with respect to pointed domain.
 * For signup as admin email- '**admin@admin.com**' password- '**123456789**'.
 * Din't created any special backend for admin.
 
@@ -22,8 +26,8 @@ Various charts and analytics are shown once the user finishes the test.
 	1) Single page application
 	2) Login(encrypted)
 	3) Signup(encrypted)
-	4) Facebook login functionality can be checked locally only as domain name not given but google login is in hosted version also, both by using passport js.
-	5) Facebook signup functionality can be checked locally only as domain name not given but google signupis in hosted version also, both by using passport js.
+	4) Facebook and google login using passport js.
+	5) Facebook and google signup using passport js.
 	6) Forgot password functionality to resetting password.
 	7) User testing management panel - User facing 
 		~ Once the user logs into the system, he can see a dashboard containing the statistics of all tests he has taken. The statistics include the number of tests taken, average score and percentage growth etc.
@@ -80,7 +84,7 @@ Setting Prerequisites
 ```
 1) Mongodb for Database handling, so install it and start with the file mongod.
 2) Install and check node is above version 6.0. Check by typing node -v in terminal.
-3) In Ubuntu to upgrade your nodejs write command [curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -] and after that write [sudo apt-get install nodejs].
+3) In Ubuntu to upgrade your nodejs write command [curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -] and after that write [sudo apt-get install nodejs] or you can refer to this page [https://in.godaddy.com/help/install-nodejs-ubuntu-17395].
 ```
 
 Setting up the local server
@@ -162,7 +166,8 @@ Nginx configuration for proxy pass to port 80 and allowing web sockets.
 	server {
 
 	    listen 80;
-
+	    server_name www.liveexam.tk;
+	    
 	    location / {
 
 	            proxy_pass http://localhost:3000;
