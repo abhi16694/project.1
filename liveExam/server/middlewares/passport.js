@@ -5,8 +5,8 @@ exports.passportMiddleware = function(passport,app) {
 
 
     // API Access link for creating client ID and secret:
-    var GOOGLE_CLIENT_ID      = "546187922156-8ipuassf7gv4rrtpoa8asl36u4sla23s.apps.googleusercontent.com"
-      , GOOGLE_CLIENT_SECRET  = "HiVKAyGYxPXjCVnY6440I580";
+    var GOOGLE_CLIENT_ID      = "546187922156-b18o2nk40tb68fq19lg2j2ddmd0olucu.apps.googleusercontent.com"
+      , GOOGLE_CLIENT_SECRET  = "pFMovoDUH7jj_Zlim_0synGg";
 
 
     // Use the GoogleStrategy within Passport.
