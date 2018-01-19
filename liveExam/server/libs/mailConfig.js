@@ -7,8 +7,8 @@ exports.smtpTransport = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 587,
     auth: {
-        user: 'abhi.a.tripathi@gmail.com',
-        pass: 'Abhi@123'
+        user: 'abhidemo123@gmail.com',
+        pass: '!@#abhi123'
     },
     tls: {rejectUnauthorized: false},
     debug:true
