@@ -1,4 +1,7 @@
+
 # Live Exam App, is a live test taking system
+
+# Note: Now it has been taken down from the hosted sites but you can still go through my code and clone it locally to run it.
 
 ## Domain pointed to cloud server using route 53
 
